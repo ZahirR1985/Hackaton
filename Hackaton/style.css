@@ -1,0 +1,227 @@
+body {
+  background-color: aliceblue;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#main-header {
+  background-color: midnightblue;
+  color: white;
+  padding: 20px;
+}
+
+#navbar {
+  border-top: 5px solid yellow;
+  border-bottom: 5px solid yellow;
+  background-color: aliceblue;
+}
+#navbar ul {
+  padding: 0;
+  list-style: none;
+}
+#navbarfooter ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.container ul {
+  display: flex;
+  justify-content: right;
+}
+
+.container a {
+  color: black;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 35px;
+}
+
+.container a:hover {
+  color: cadetblue;
+}
+
+#showcase {
+  background-image: url(/images/malawi.jpg);
+  background-position: center right;
+  min-height: 200px;
+  text-align: center;
+}
+
+#showcase h2 {
+  color: white;
+  font-size: 40px;
+  line-height: 1.6em;
+  padding: 25px;
+}
+
+#mainbox {
+  display: flex;
+}
+
+#main {
+  background-color: darkgray;
+  padding: 20px;
+  margin-top: 80px;
+}
+#kaart {
+  width: 500px;
+  height: 250px;
+  padding: 20px;
+  margin-top: 60px;
+}
+#kaartfoto {
+  height: 400px;
+}
+
+#main-footer {
+  background-color: midnightblue;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.fishfoto {
+  width: 200px;
+  border-radius: 100px;
+}
+#mainfish {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 1024px) {
+  #mainfish {
+    flex-direction: row;
+  }
+
+  .fishfoto {
+    width: 250px;
+    border-radius: 120px;
+  }
+}
+
+.fish {
+  text-align: center;
+  margin: 100px 100px;
+}
+
+/* Cichliden*/
+
+#showcase2 {
+  background-image: url(/images/mix.jpg);
+  background-position: center right;
+  background-size: 100%;
+  min-height: 200px;
+  text-align: center;
+}
+#showcase2 h2 {
+  color: white;
+  line-height: 1.6em;
+  font-size: 50px;
+  padding-top: 30px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+#maincichlid {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.cichlidfoto {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 750px) {
+  #maincichlid {
+    max-width: none;
+    width: 90%;
+  }
+  #maincichlid p {
+    line-height: 1.6em;
+    font-size: 20px;
+  }
+  .cichlidfoto {
+    width: 450px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.achtergrond {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #3582b5),
+    url(/images/sunset.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 90%;
+  max-width: 600px;
+}
+
+.inputgroep {
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  font-size: 15px;
+}
+
+label {
+  height: 100%;
+  color: #fff;
+}
+button {
+  padding: 10px;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 20%;
+  cursor: pointer;
+}
+
+#showcase3 {
+  background-image: url(/images/sunset2.jpg);
+  background-position: center right;
+  background-size: 100%;
+  min-height: 200px;
+  text-align: center;
+}
+#showcase3 h2 {
+  color: white;
+  line-height: 1.6em;
+  font-size: 50px;
+  padding-top: 30px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
